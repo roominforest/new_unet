@@ -1,11 +1,6 @@
 # reference: https://www.zhihu.com/question/272988870/answer/562262315
 
 #original version
-作者：AlexL
-链接：https://www.zhihu.com/question/272988870/answer/562262315
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
 def conv_block(neurons, block_input, bn=False, dropout=None):
     conv1 = Conv2D(neurons, (3,3), padding='same', kernel_initializer='glorot_normal')(block_input)
     if bn:
